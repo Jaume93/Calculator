@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculadora</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <!-- <div class=" calculadora">
+      <!-- <div class=" calculadora">
             <div class="valor1">
                 <label for="numero1">Numero 1</label>
                 <input id="valor1" type="number" value="">
@@ -36,48 +38,119 @@
             </div> 
 
         </div> -->
-        <div class="calculator-bg">
-            <form name="calculator">
-                    <label for="numero">
-                        <input class="resultado" name="screen" type="text" value="" autocomplete="off" readonly>
-                    </label>
-                <div class="buttonsTop">
-                    <input type="button" value="AC" id="clear" onclick=clearValues()>
-                    <input type="button" value="+/-" id="positiveNegative" onclick=positiveToNegative()>
-                    <input type="button" value="%" id="perCent" onclick=perCent()>
-                    <input type="button" value="/" id="division" onclick=dividir()>
-                </div>
+      <div class="calculator-bg">
+        <form name="calculator">
+          <label for="numero">
+            <input
+              class="resultado"
+              name="screen"
+              type="text"
+              value="0"
+              autocomplete="off"
+              readonly
+            />
+          </label>
+          <div class="buttonsTop">
+            <input
+              type="button"
+              value="AC"
+              id="clear"
+              onclick="clearValues()"
+            />
+            <input
+              type="button"
+              value="+/-"
+              id="positiveNegative"
+              onclick="positiveToNegative()"
+            />
+            <input type="button" value="%" id="perCent" onclick="perCent()" />
+            <input type="button" value="/" id="division" onclick="dividir()" />
+          </div>
 
-                <div class="buttonGroup">
-                    <input type="button" value="9" id="nueve" onclick='document.calculator.screen.value +="9"'>
-                    <input type="button" value="8" id="ocho" onclick='document.calculator.screen.value +="8"'>
-                    <input type="button" value="7" id="siete" onclick='document.calculator.screen.value +="7"'>
-                    <input type="button" value="X" id="multiplicacion" onclick=multiplicar()>
-                </div>
+          <div class="buttonGroup">
+            <input
+              type="button"
+              value="9"
+              id="nueve"
+              onclick='document.calculator.screen.value +="9"'
+            />
+            <input
+              type="button"
+              value="8"
+              id="ocho"
+              onclick='document.calculator.screen.value +="8"'
+            />
+            <input
+              type="button"
+              value="7"
+              id="siete"
+              onclick='document.calculator.screen.value +="7"'
+            />
+            <input
+              type="button"
+              value="X"
+              id="multiplicacion"
+              onclick="multiplicar()"
+            />
+          </div>
 
-                <div class="buttonGroup">
-                    <input type="button" value="6" id="seis" onclick='document.calculator.screen.value +="6"'>
-                    <input type="button" value="5" id="cinco" onclick='document.calculator.screen.value +="5"'>
-                    <input type="button" value="4" id="cuatro" onclick='document.calculator.screen.value +="4"'>
-                    <input type="button" value="-" id="resta" onclick=restar()>
-                </div>
+          <div class="buttonGroup">
+            <input
+              type="button"
+              value="6"
+              id="seis"
+              onclick='document.calculator.screen.value +="6"'
+            />
+            <input
+              type="button"
+              value="5"
+              id="cinco"
+              onclick='document.calculator.screen.value +="5"'
+            />
+            <input
+              type="button"
+              value="4"
+              id="cuatro"
+              onclick='document.calculator.screen.value +="4"'
+            />
+            <input type="button" value="-" id="resta" onclick="restar()" />
+          </div>
 
-                <div class="buttonGroup">
-                    <input type="button" value="3" id="tres" onclick='document.calculator.screen.value +="3"'>
-                    <input type="button" value="2" id="dos" onclick='document.calculator.screen.value +="2"'>
-                    <input type="button" value="1" id="uno" onclick='document.calculator.screen.value +="1"'>
-                    <input type="button" value="+" id="suma" onclick=sumar()>
-                </div>
+          <div class="buttonGroup">
+            <input
+              type="button"
+              value="3"
+              id="tres"
+              onclick='document.calculator.screen.value +="3"'
+            />
+            <input
+              type="button"
+              value="2"
+              id="dos"
+              onclick='document.calculator.screen.value +="2"'
+            />
+            <input
+              type="button"
+              value="1"
+              id="uno"
+              onclick='document.calculator.screen.value +="1"'
+            />
+            <input type="button" value="+" id="suma" onclick="sumar()" />
+          </div>
 
-                <div class="buttonGroup">
-                    <input type="button" value="0" id="cero" onclick='document.calculator.screen.value +="0"'>
-                    <input type="button" value="=" id="igual" onclick=resolver()>
-                </div>
-            </form>
-        </div>
+          <div class="buttonGroup">
+            <input
+              type="button"
+              value="0"
+              id="cero"
+              onclick='document.calculator.screen.value +="0"'
+            />
+            <input type="button" value="=" id="igual" onclick="resolver()" />
+          </div>
+        </form>
+      </div>
     </main>
 
     <script src="./calculadora.js"></script>
-</body>
-
+  </body>
 </html>
