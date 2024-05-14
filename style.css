@@ -18,70 +18,42 @@ main {
   background-color: #3c3939;
   border-radius: 1rem;
   border: 2px solid #6f6e6e;
+  height: 29rem;
+  width: 17.14rem;
   box-shadow: 20px 10px 20px #54535379;
 }
 
 .resultado {
   height: 3rem;
-  width: 16.87rem;
-  font-weight: bold;
-  font-size: larger;
+  width: 15.14rem;
+  font-weight: 100;
   margin-top: 10px;
-  text-align: center;
   border-radius: 5px;
   color: rgb(243, 245, 247);
   background-color: #3c3939;
-  padding: 20px 10px;
+  padding: 1.25rem 1rem;
   font-size: 4rem;
   border: none;
   text-align: end;
-}
-
-.buttonsTop {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-
-.buttonGroup {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-button,
-input {
-  height: 4.5rem;
-  width: 4.5rem;
-  margin: 1px;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  background: #817777;
-  border: none;
-}
-
-.buttonsTop input,
-.buttonGroup input:nth-child(2) {
-  margin-left: 0; /* Elimina el margen izquierdo de los primeros inputs de cada grupo */
-}
-
-.buttonGroup input:nth-child(2) {
-  margin-right: 0; /* Elimina el margen derecho de los últimos inputs de cada grupo */
-}
-
-#cero {
-  border-radius: 0 0 0 1rem;
-}
-#igual {
-  border-radius: 0 0 1rem 0;
-}
-
-.resultado {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.buttonsTop,
+.buttonGroup {
+  display: flex;
+}
+
+input {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: 0.5px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  background: #817777;
+  border: none;
 }
 
 #suma,
@@ -96,6 +68,11 @@ input {
   background: #605b5b;
 }
 
+#igual {
+  border-radius: 0 0 0.8rem 0;
+}
+
 #cero {
-  width: 14rem;
+  width: 13.7rem;
+  border-radius: 0 0 0 0.8rem;
 }
